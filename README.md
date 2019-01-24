@@ -11,4 +11,6 @@ The console output of the second app domain is redirected to a stringbuilder, an
 
 The app domain can be unloaded, and all roslyn assemblies with it. (See below in red)
 
+The command object is marked Serializable, and is passed by reference to and from the second app domain, allowing for two-way communication other than via Console output.
+
 ![alt text](https://raw.githubusercontent.com/Sodoshi/RoslynTest/master/RoslynTest.png)
